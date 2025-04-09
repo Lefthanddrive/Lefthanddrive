@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lefthand Drive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #e50914;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #f0f0f0;
+      margin: 10px;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #e50914;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      border-bottom: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    section h2 {
+      color: #e50914;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #1db954;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-top: 3px solid #e50914;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="lefthand_drive.png" alt="Lefthand Drive Logo">
+    <h1>Lefthand Drive</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#shows">Shows</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Lefthand Drive is a hard-hitting rock band blending powerful riffs with catchy pop sensibilities.</p>
+  </section>
+
+  <section id="music">
+    <h2>Music</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_video_id_here" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="shows">
+    <h2>Upcoming Shows</h2>
+    <p>May 10, 2025 - Taipei Live House</p>
+    <p>June 15, 2025 - Kaohsiung Ocean Music Festival</p>
+  </section>
+
+  <section id="calendar">
+    <h2>Calendar</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia%2FTaipei" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: band@example.com</p>
+    <p>Instagram: @lefthanddrive</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lefthand Drive. All rights reserved.</p>
+  </footer>
+</body>
+</html>

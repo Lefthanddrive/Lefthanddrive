@@ -184,18 +184,27 @@
     <h2>Calendar</h2>
     <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=Asia%2FTaipei" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
   </section>
-
+  
   <section id="gallery">
-    <h2>Gallery</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-      <img src="images/Nick.jpg" alt="Gallery Image 1" style="width: 100%; max-width: 300px; border-radius: 8px;">
-      <img src="images/CY.jpg" alt="Gallery Image 2" style="width: 100%; max-width: 300px; border-radius: 8px;">
-      <img src="images/Vijay.jpg" alt="Gallery Image 3" style="width: 100%; max-width: 300px; border-radius: 8px;">
-      <img src="images/Julian.jpg" alt="Gallery Image 3" style="width: 100%; max-width: 300px; border-radius: 8px;">
+  <h2>Gallery</h2>
+  <div style="position: relative; overflow: hidden;">
+    <button id="prevBtn" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: white; border: none; font-size: 2rem; z-index: 10; cursor: pointer; padding: 0 10px;">&#8249;</button>
+    <button id="nextBtn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.6); color: white; border: none; font-size: 2rem; z-index: 10; cursor: pointer; padding: 0 10px;">&#8250;</button>
+    <div id="carousel" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 15px; padding: 10px 40px;">
+      <img src="images/Nick.jpg" alt="Gallery Image 1" style="height: 200px; border-radius: 8px; flex: 0 0 auto;">
+      <img src="images/CY.jpg" alt="Gallery Image 2" style="height: 200px; border-radius: 8px; flex: 0 0 auto;">
+      <img src="images/Vijay.jpg" alt="Gallery Image 3" style="height: 200px; border-radius: 8px; flex: 0 0 auto;">
+      <img src="images/Julian.jpg" alt="Gallery Image 3" style="height: 200px; border-radius: 8px; flex: 0 0 auto;">
       <!-- Add more images as needed -->
     </div>
-    <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #888;">Rock Gallery.</p>
-  </section>
+  </div>
+  <script>
+    const carousel = document.getElementById('carousel');
+    document.getElementById('prevBtn').onclick = () => carousel.scrollBy({left: -300, behavior: 'smooth'});
+    document.getElementById('nextBtn').onclick = () => carousel.scrollBy({left: 300, behavior: 'smooth'});
+  </script>
+  <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #888;">Rock Gallery.</p>
+</section>
 
   <section id="contact">
     <h2>Contact Us</h2>

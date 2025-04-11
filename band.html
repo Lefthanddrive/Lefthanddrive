@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lefthand Drive Members</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e50914;
+      margin-bottom: 40px;
+    }
+
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      color: #ffffff;
+    }
+
+    .member p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet the Band</h1>
+  <div class="members">
+    <div class="member">
+      <img src="images/member1.jpg" alt="Member 1">
+      <h3>Alex</h3>
+      <p>Vocals & Rhythm Guitar</p>
+    </div>
+    <div class="member">
+      <img src="images/member2.jpg" alt="Member 2">
+      <h3>Jin</h3>
+      <p>Lead Guitar</p>
+    </div>
+    <div class="member">
+      <img src="images/member3.jpg" alt="Member 3">
+      <h3>Mina</h3>
+      <p>Bass</p>
+    </div>
+    <div class="member">
+      <img src="images/member4.jpg" alt="Member 4">
+      <h3>Ken</h3>
+      <p>Drums</p>
+    </div>
+  </div>
+</body>
+</html>
